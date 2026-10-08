@@ -1,0 +1,9 @@
+{
+	"appId": "com.kit.collegeapp",
+	"appName": "KIT College App",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"server": {
+		"androidScheme": "https"
+	}
+}
