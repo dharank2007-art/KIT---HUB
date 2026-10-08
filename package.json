@@ -1,0 +1,49 @@
+{
+  "name": "kit-college-app",
+  "version": "1.0.0",
+  "description": "KIT College Management & Student Portal App",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "dev": "node scripts/dev.js",
+    "build": "vite build",
+    "test": "node --test",
+    "preview": "vite preview",
+    "seed": "node server/seed.js",
+    "cap:sync": "npm run build && npx cap sync android",
+    "cap:sync:android:debug": "npm run build -- --mode androidDebug && npx cap sync android",
+    "cap:sync:android:device": "npm run build -- --mode androidDevice && npx cap sync android"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@capacitor/android": "^7.0.1",
+    "@capacitor/core": "^7.0.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.475.0",
+    "mongodb-memory-server": "^11.3.0",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "pdfkit": "^0.16.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
+    "sentiment": "^5.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.1",
+    "@tailwindcss/vite": "^4.0.9",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9",
+    "vite": "^6.2.0"
+  }
+}
